@@ -21,7 +21,7 @@ def post_query_set():
 
 def index(request):
     template = 'blog/index.html'
-    posts = post_query_set().order_by('-pub_date', 'title')[:5]
+    posts = post_query_set().order_by('-pub_date')[:5]
     context = {'post_list': posts}
     return render(request, template, context)
 

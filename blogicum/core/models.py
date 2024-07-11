@@ -16,12 +16,3 @@ class BaseModel(models.Model):
 
     class Meta:
         abstract = True
-
-
-class TitleModel(models.Model):
-    """Заголовок модель."""
-
-    title = models.CharField(max_length=256, verbose_name='Заголовок')
-
-    class Meta:
-        abstract = True
